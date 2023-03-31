@@ -1,3 +1,60 @@
 body {
-  background: blanchedalmond;
+  background: #FAE5CF;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #0B3954;
+  margin-right: 25px;
+}
+
+nav a:hover {
+  color: darkred;
+}
+
+*:not(.nav){
+  border: 1px solid #0B3954;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer  {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow:3;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header {
+  width: 100%;
+}
+main, footer, header {
+  margin: 1em;
+}
 }
